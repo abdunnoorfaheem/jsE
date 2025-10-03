@@ -104,3 +104,58 @@
 // IIFE means Immediate invoked Function Expression
 
 //js reduce 
+
+// let n=[1,2,3,4,5];
+
+// let sum=n.reduce((acc,curr)=> acc+curr,0);
+
+// console.log(sum);
+
+
+let numbers=[5,7,5,6,4];
+
+// numbers.push(2);
+// console.log(numbers);
+// numbers.pop();
+// console.log(numbers);
+// numbers.unshift(1);
+// numbers.unshift(8);
+// console.log(numbers);
+// numbers.shift()
+// console.log(numbers);
+
+//Callbacks, Promises & Async Await
+
+// function hello(){
+//     console.log("hi Noor");
+    
+// }
+// setTimeout(hello,3000);
+
+// console.log("one");
+// console.log("Two");
+// console.log("Three");
+
+
+// setTimeout(()=>{
+//     console.log("Good Morning");
+    
+// },3000)
+
+// console.log("four");
+
+//callback 
+
+function add(a,b){
+
+    console.log(a+b);
+    
+
+}
+
+function calculation(a,b,callBackF){
+    callBackF(a,b);
+    
+    
+}
+calculation(1,5,add);
